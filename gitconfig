@@ -2,9 +2,9 @@
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
 [user]
-	name = mhartington
-	email = mikehartington@gmail.com
-	signingkey = E890DB47
+	name = Christoph Wedenig
+	signingkey = wedenigc@gmail.com
+	email = christoph@wedenig.org
 [credential]
 	helper = osxkeychain
 [filter "hawser"]
@@ -16,8 +16,7 @@
 	smudge = git lfs smudge %f
 	required = true
 [github]
-  user = mhartington
-
+  user = w3d3
 [core]
   pager = zsh -lc 'diff-highlight | strip_diff_leading_symbols | less -r' -
 
@@ -27,4 +26,6 @@
   newNormal = "green bold"
   newHighlight = "green bold 22"
 [commit]
-	gpgsign = true
+  gpgsign = true
+[gpg]
+  program = gpg1
